@@ -1,0 +1,334 @@
+# =====================================================
+# AI WASTE CLASSIFICATION & DIGITAL TWIN
+# Git Ignore Configuration
+# =====================================================
+
+
+# =====================================================
+# Python
+# =====================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Python virtual environments
+.venv/
+.venv-*/
+venv/
+env/
+ENV/
+.env/
+.conda/
+conda-env/
+
+
+# =====================================================
+# Jupyter Notebook
+# =====================================================
+
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+
+# =====================================================
+# IDE / Editor
+# =====================================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.project
+.pydevproject
+.settings/
+
+
+# =====================================================
+# Operating System
+# =====================================================
+
+.DS_Store
+.DS_Store?
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+
+# =====================================================
+# Logs
+# =====================================================
+
+*.log
+logs/
+*.out
+
+
+# =====================================================
+# Temporary Files
+# =====================================================
+
+temp/
+tmp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+filename
+
+
+# =====================================================
+# Python Build / Packaging
+# =====================================================
+
+build/
+dist/
+*.egg-info/
+.eggs/
+MANIFEST
+MANIFEST.in
+
+
+# =====================================================
+# Testing
+# =====================================================
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.cache/
+
+
+# =====================================================
+# TensorFlow / Keras
+# =====================================================
+
+*.ckpt
+checkpoint
+checkpoints/
+
+# TensorBoard
+runs/
+tensorboard/
+.tensorboard/
+
+
+# =====================================================
+# Machine Learning Experiment Artifacts
+# =====================================================
+
+wandb/
+mlruns/
+neptune/
+lightning_logs/
+
+
+# =====================================================
+# Dataset
+# =====================================================
+
+# Raw/local dataset is intentionally excluded from GitHub
+dataset/
+
+# Optional downloaded datasets
+datasets/
+
+# Local data exports
+*.parquet
+*.feather
+
+
+# =====================================================
+# Large / Generated Data
+# =====================================================
+
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# CSV files are NOT globally ignored because project
+# telemetry/results may legitimately be tracked.
+
+
+# =====================================================
+# Local Environment / Secrets
+# =====================================================
+
+.env
+.env.*
+!.env.example
+
+*.secret
+*.secrets
+secrets/
+credentials/
+credentials.json
+config.local.*
+settings.local.*
+
+
+# =====================================================
+# OS / Local Development Files
+# =====================================================
+
+.DS_Store
+Thumbs.db
+
+
+# =====================================================
+# Project-Specific Temporary Files
+# =====================================================
+
+scratch/
+debug/
+debug_output/
+temporary/
+temp_output/
+
+# Antigravity / Gemini temporary working files
+.gemini/
+.antigravity/
+
+
+# =====================================================
+# Generated Cache / Visualization Cache
+# =====================================================
+
+cache/
+.cache/
+__cache__/
+
+
+# =====================================================
+# Compiled / Native Artifacts
+# =====================================================
+
+*.dll
+*.so
+*.dylib
+*.pyd
+
+
+# =====================================================
+# Node / Frontend Artifacts
+# =====================================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+
+# =====================================================
+# Build Outputs
+# =====================================================
+
+out/
+output/
+release/
+coverage/
+
+
+# =====================================================
+# Local Database Files
+# =====================================================
+
+*.sqlite
+*.sqlite3
+*.db
+
+
+# =====================================================
+# Personal / Machine-Specific Files
+# =====================================================
+
+*.local
+local/
+machine/
+user_data/
+
+
+# =====================================================
+# Dataset / Training Splits Generated Locally
+# =====================================================
+
+# Keep source scripts/configs, but ignore locally generated
+# dataset split folders if created under these names.
+data/raw/
+data/cache/
+data/tmp/
+
+
+# =====================================================
+# Optional Generated Research Artifacts
+# =====================================================
+
+# Uncomment these only if these folders become too large:
+# results/logs/
+# results/cache/
+# results/tmp/
+
+
+# =====================================================
+# Keep Important Project Artifacts
+# =====================================================
+
+# NOTE:
+# models/ is intentionally NOT ignored.
+# results/ is intentionally NOT ignored.
+# paper/ is intentionally NOT ignored.
+# presentation/ is intentionally NOT ignored.
+# verification/ is intentionally NOT ignored.
+#
+# Trained models and research outputs should remain
+# version-controlled unless they become too large.
+# =====================================================
+# Project Inventory / Temporary Reports
+# =====================================================
+
+FULL_PROJECT_FILES.txt
+FULL_PROJECT_STRUCTURE.txt
+PROJECT_FILES_CLEAN.txt
+
+# =====================================================
+# Verification Recovery Copies
+# =====================================================
+
+verification/recovery_models/
+verification/recovery_results/
+
+# =====================================================
+# Large Generated Inventory Files
+# =====================================================
+
+verification/inventory/files_by_size.txt
+verification/inventory/non_empty_files.txt
+verification/inventory/project_inventory.txt
+verification/inventory/python_files.txt
+
+# =====================================================
+# Temporary Verification Archives
+# =====================================================
+
+verification/inventory.zip
+# =====================================================
+# Verification artifacts not required in source repo
+# =====================================================
+
+verification/empty_files/
+verification/figures/
+verification/inventory/experimental_files.txt
+verification/recovery/
+verification/results/
+
+# Empty placeholder manuscript
+paper/manuscript.docx

@@ -1,0 +1,30 @@
+model:
+  path: "models/mobilenetv2.keras"
+  input_size: [160, 160]
+
+classes:
+  - cardboard
+  - glass
+  - metal
+  - paper
+  - plastic
+  - trash
+
+runtime:
+  camera_index: 0
+
+communication:
+  host: "127.0.0.1"
+  port: 5005
+
+reliability:
+  confidence_threshold: 0.70
+  entropy_threshold: 1.20
+
+simulation:
+  conveyor_speed: 200
+  gate_position: 600
+  gate_duration: 0.5
+
+telemetry:
+  path: "results/telemetry/telemetry.csv"

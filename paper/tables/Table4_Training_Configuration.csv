@@ -1,0 +1,9 @@
+Parameter,Value
+Dataset,TrashNet
+Input Size,160 x 160
+Batch Size,32
+Epochs,15
+Optimizer,Adam
+Loss Function,Sparse Categorical Crossentropy
+Transfer Learning,MobileNetV2 / EfficientNetB0
+Random Seed,42

@@ -1,0 +1,530 @@
+{
+  "step_1_env": {
+    "yolo_env": "C:\\Waste classification Research\\.venv-yolo (Python 3.12.10, Ultralytics 8.4.161, PyTorch 2.14.0+cpu)",
+    "mobilenet_env": "C:\\Waste classification Research\\.venv (Python 3.11.9, TensorFlow 2.21.0, Keras 3.15.1)",
+    "bridge": "Zero-install local loopback TCP IPC (127.0.0.1:5007)"
+  },
+  "step_2_model": {
+    "model_path": "models/mobilenetv2.keras",
+    "input_shape": [
+      null,
+      160,
+      160,
+      3
+    ],
+    "output_shape": [
+      null,
+      6
+    ],
+    "classes": [
+      "cardboard",
+      "glass",
+      "metal",
+      "paper",
+      "plastic",
+      "trash"
+    ]
+  },
+  "step_4_background": {
+    "frames_tested": 30,
+    "frames_skipped": 0,
+    "false_detections": 30,
+    "rejection_rate_pct": 0.0,
+    "udp_dispatched": 0
+  },
+  "step_5_class_coverage": [
+    {
+      "class_tested": "cardboard",
+      "image_file": "cardboard101.jpg",
+      "yolo_class": "object",
+      "yolo_conf": 0.88,
+      "bbox": [
+        0.0,
+        0.0,
+        512.0,
+        384.0
+      ],
+      "predicted_class": "cardboard",
+      "predicted_conf": 0.99919193983078,
+      "entropy": 0.0075091153571521215,
+      "decision": "classified",
+      "is_reliable": true,
+      "udp_sent": false,
+      "probabilities": {
+        "cardboard": 0.99919193983078,
+        "glass": 1.8885522877098992e-05,
+        "metal": 3.8503912946907803e-05,
+        "paper": 0.0004382006882224232,
+        "plastic": 0.00021533221297431737,
+        "trash": 9.719028457766399e-05
+      },
+      "yolo_latency_ms": 49.87099999561906,
+      "mobilenet_latency_ms": 134.10039999871515,
+      "e2e_latency_ms": 185.28069999592844
+    },
+    {
+      "class_tested": "glass",
+      "image_file": "glass107.jpg",
+      "yolo_class": "book",
+      "yolo_conf": 0.4548644423484802,
+      "bbox": [
+        295.0,
+        6.0,
+        436.0,
+        384.0
+      ],
+      "predicted_class": "metal",
+      "predicted_conf": 0.5934997797012329,
+      "entropy": 1.1957738534068083,
+      "decision": "uncertain",
+      "is_reliable": false,
+      "udp_sent": false,
+      "probabilities": {
+        "cardboard": 0.1223454400897026,
+        "glass": 0.05887372046709061,
+        "metal": 0.5934997797012329,
+        "paper": 0.18612393736839294,
+        "plastic": 0.028887135908007622,
+        "trash": 0.01027004700154066
+      },
+      "yolo_latency_ms": 42.22149999986868,
+      "mobilenet_latency_ms": 132.87539999873843,
+      "e2e_latency_ms": 176.9637999968836
+    },
+    {
+      "class_tested": "metal",
+      "image_file": "metal1.jpg",
+      "yolo_class": "object",
+      "yolo_conf": 0.88,
+      "bbox": [
+        0.0,
+        0.0,
+        512.0,
+        384.0
+      ],
+      "predicted_class": "metal",
+      "predicted_conf": 0.9973099231719971,
+      "entropy": 0.020691107307338003,
+      "decision": "classified",
+      "is_reliable": true,
+      "udp_sent": false,
+      "probabilities": {
+        "cardboard": 3.361368499099626e-06,
+        "glass": 0.001249771099537611,
+        "metal": 0.9973099231719971,
+        "paper": 4.231623825035058e-05,
+        "plastic": 0.0013930905843153596,
+        "trash": 1.5230481267280993e-06
+      },
+      "yolo_latency_ms": 43.34920000110287,
+      "mobilenet_latency_ms": 126.74600000900682,
+      "e2e_latency_ms": 171.65060000843368
+    },
+    {
+      "class_tested": "paper",
+      "image_file": "paper1.jpg",
+      "yolo_class": "book",
+      "yolo_conf": 0.37422817945480347,
+      "bbox": [
+        48.0,
+        0.0,
+        458.0,
+        357.0
+      ],
+      "predicted_class": "cardboard",
+      "predicted_conf": 0.6786423325538635,
+      "entropy": 0.8680502315814752,
+      "decision": "uncertain",
+      "is_reliable": false,
+      "udp_sent": false,
+      "probabilities": {
+        "cardboard": 0.6786423325538635,
+        "glass": 0.0010589688317850232,
+        "metal": 0.00751516642048955,
+        "paper": 0.2476728856563568,
+        "plastic": 0.017044639214873314,
+        "trash": 0.048066023737192154
+      },
+      "yolo_latency_ms": 42.66180000558961,
+      "mobilenet_latency_ms": 129.28629999805707,
+      "e2e_latency_ms": 174.6149999962654
+    },
+    {
+      "class_tested": "plastic",
+      "image_file": "plastic107.jpg",
+      "yolo_class": "clock",
+      "yolo_conf": 0.27234894037246704,
+      "bbox": [
+        99.0,
+        26.0,
+        423.0,
+        346.0
+      ],
+      "predicted_class": "plastic",
+      "predicted_conf": 0.728550374507904,
+      "entropy": 0.8683744398526998,
+      "decision": "classified",
+      "is_reliable": true,
+      "udp_sent": false,
+      "probabilities": {
+        "cardboard": 0.01002059131860733,
+        "glass": 0.1720680147409439,
+        "metal": 0.038752250373363495,
+        "paper": 0.003127935342490673,
+        "plastic": 0.728550374507904,
+        "trash": 0.04748079180717468
+      },
+      "yolo_latency_ms": 41.55439999885857,
+      "mobilenet_latency_ms": 128.19600000511855,
+      "e2e_latency_ms": 171.76080000353977
+    },
+    {
+      "class_tested": "trash",
+      "image_file": "trash113.jpg",
+      "yolo_class": "object",
+      "yolo_conf": 0.88,
+      "bbox": [
+        0.0,
+        0.0,
+        512.0,
+        384.0
+      ],
+      "predicted_class": "trash",
+      "predicted_conf": 0.6242835521697998,
+      "entropy": 0.9300998601251096,
+      "decision": "uncertain",
+      "is_reliable": false,
+      "udp_sent": false,
+      "probabilities": {
+        "cardboard": 0.05973467230796814,
+        "glass": 0.001694008125923574,
+        "metal": 0.292525053024292,
+        "paper": 0.007421558722853661,
+        "plastic": 0.014341107569634914,
+        "trash": 0.6242835521697998
+      },
+      "yolo_latency_ms": 42.86480000882875,
+      "mobilenet_latency_ms": 127.66159999591764,
+      "e2e_latency_ms": 172.13180000544526
+    }
+  ],
+  "step_6_latency": {
+    "yolo": {
+      "mean": 42.566532259731886,
+      "median": 42.67049999907613,
+      "min": 36.539900000207126,
+      "max": 49.87099999561906,
+      "std": 2.6168141814488206
+    },
+    "mobilenet": {
+      "mean": 130.852735483542,
+      "median": 127.7261999930488,
+      "min": 120.85469999874476,
+      "max": 176.68899999989662,
+      "std": 9.690301924708226
+    },
+    "e2e": {
+      "mean": 175.8396838704357,
+      "median": 172.59249999187887,
+      "min": 163.87940000277013,
+      "max": 216.6475999983959,
+      "std": 9.451641597371939
+    },
+    "approx_fps": 5.686998395293021,
+    "baseline_ms": 109.8,
+    "delta_ms": 66.0396838704357
+  },
+  "step_7_reliability": {
+    "total": 31,
+    "accepted": 3,
+    "uncertain": 28,
+    "conf_threshold": 0.7,
+    "entropy_threshold": 1.2
+  },
+  "step_8_downstream": {
+    "total_udp_received": 31,
+    "telemetry_records": 57
+  },
+  "detected_records_sample": [
+    {
+      "frame_idx": 1,
+      "yolo_class": "person",
+      "yolo_conf": 0.8956283926963806,
+      "bbox": [
+        0.0,
+        55.0,
+        456.0,
+        480.0
+      ],
+      "predicted_class": "glass",
+      "predicted_conf": 0.4279292821884155,
+      "entropy": 1.4662048500299913,
+      "decision": "uncertain",
+      "is_reliable": false,
+      "udp_sent": false,
+      "probabilities": {
+        "cardboard": 0.010430990718305111,
+        "glass": 0.4279292821884155,
+        "metal": 0.22232255339622498,
+        "paper": 0.08874454349279404,
+        "plastic": 0.08333351463079453,
+        "trash": 0.16723905503749847
+      },
+      "yolo_latency_ms": 36.539900000207126,
+      "mobilenet_latency_ms": 176.68899999989662,
+      "e2e_latency_ms": 216.6475999983959
+    },
+    {
+      "frame_idx": 2,
+      "yolo_class": "person",
+      "yolo_conf": 0.890042245388031,
+      "bbox": [
+        0.0,
+        72.0,
+        447.0,
+        480.0
+      ],
+      "predicted_class": "glass",
+      "predicted_conf": 0.275167316198349,
+      "entropy": 1.583552273058161,
+      "decision": "uncertain",
+      "is_reliable": false,
+      "udp_sent": false,
+      "probabilities": {
+        "cardboard": 0.014136247336864471,
+        "glass": 0.275167316198349,
+        "metal": 0.2667732834815979,
+        "paper": 0.12022008746862411,
+        "plastic": 0.09507396817207336,
+        "trash": 0.22862905263900757
+      },
+      "yolo_latency_ms": 43.692299994290806,
+      "mobilenet_latency_ms": 125.53720000141766,
+      "e2e_latency_ms": 171.32750000746455
+    },
+    {
+      "frame_idx": 3,
+      "yolo_class": "person",
+      "yolo_conf": 0.876376748085022,
+      "bbox": [
+        0.0,
+        80.0,
+        449.0,
+        480.0
+      ],
+      "predicted_class": "metal",
+      "predicted_conf": 0.28579625487327576,
+      "entropy": 1.5742967765649931,
+      "decision": "uncertain",
+      "is_reliable": false,
+      "udp_sent": false,
+      "probabilities": {
+        "cardboard": 0.010288288816809654,
+        "glass": 0.18410368263721466,
+        "metal": 0.28579625487327576,
+        "paper": 0.16605718433856964,
+        "plastic": 0.08235248923301697,
+        "trash": 0.27140212059020996
+      },
+      "yolo_latency_ms": 42.3434999975143,
+      "mobilenet_latency_ms": 123.13199999334756,
+      "e2e_latency_ms": 167.891300006886
+    },
+    {
+      "frame_idx": 4,
+      "yolo_class": "person",
+      "yolo_conf": 0.9082411527633667,
+      "bbox": [
+        0.0,
+        80.0,
+        454.0,
+        480.0
+      ],
+      "predicted_class": "metal",
+      "predicted_conf": 0.40223416686058044,
+      "entropy": 1.5297206064122475,
+      "decision": "uncertain",
+      "is_reliable": false,
+      "udp_sent": false,
+      "probabilities": {
+        "cardboard": 0.007474885322153568,
+        "glass": 0.1717163771390915,
+        "metal": 0.40223416686058044,
+        "paper": 0.14402882754802704,
+        "plastic": 0.13526548445224762,
+        "trash": 0.13928021490573883
+      },
+      "yolo_latency_ms": 44.89579999062698,
+      "mobilenet_latency_ms": 127.75230000261217,
+      "e2e_latency_ms": 175.07620000105817
+    },
+    {
+      "frame_idx": 5,
+      "yolo_class": "person",
+      "yolo_conf": 0.8014465570449829,
+      "bbox": [
+        0.0,
+        0.0,
+        466.0,
+        480.0
+      ],
+      "predicted_class": "trash",
+      "predicted_conf": 0.5848299264907837,
+      "entropy": 1.2486677598016884,
+      "decision": "uncertain",
+      "is_reliable": false,
+      "udp_sent": false,
+      "probabilities": {
+        "cardboard": 0.019121332094073296,
+        "glass": 0.04158458486199379,
+        "metal": 0.1517895758152008,
+        "paper": 0.0538947619497776,
+        "plastic": 0.1487797647714615,
+        "trash": 0.5848299264907837
+      },
+      "yolo_latency_ms": 45.2447999996366,
+      "mobilenet_latency_ms": 124.64320000435691,
+      "e2e_latency_ms": 172.14429999876302
+    },
+    {
+      "frame_idx": 6,
+      "yolo_class": "person",
+      "yolo_conf": 0.9196666479110718,
+      "bbox": [
+        0.0,
+        85.0,
+        467.0,
+        480.0
+      ],
+      "predicted_class": "glass",
+      "predicted_conf": 0.38168808817863464,
+      "entropy": 1.4789401784788658,
+      "decision": "uncertain",
+      "is_reliable": false,
+      "udp_sent": false,
+      "probabilities": {
+        "cardboard": 0.004868378862738609,
+        "glass": 0.38168808817863464,
+        "metal": 0.2365097552537918,
+        "paper": 0.07086718082427979,
+        "plastic": 0.10149867087602615,
+        "trash": 0.204568013548851
+      },
+      "yolo_latency_ms": 43.62189999665134,
+      "mobilenet_latency_ms": 126.73439999343827,
+      "e2e_latency_ms": 172.55540000041947
+    },
+    {
+      "frame_idx": 7,
+      "yolo_class": "person",
+      "yolo_conf": 0.900342583656311,
+      "bbox": [
+        0.0,
+        83.0,
+        470.0,
+        480.0
+      ],
+      "predicted_class": "glass",
+      "predicted_conf": 0.2848902940750122,
+      "entropy": 1.6001635574633781,
+      "decision": "uncertain",
+      "is_reliable": false,
+      "udp_sent": false,
+      "probabilities": {
+        "cardboard": 0.014115860685706139,
+        "glass": 0.2848902940750122,
+        "metal": 0.26714321970939636,
+        "paper": 0.11983039975166321,
+        "plastic": 0.12653426826000214,
+        "trash": 0.1874859780073166
+      },
+      "yolo_latency_ms": 37.54350000235718,
+      "mobilenet_latency_ms": 129.220400005579,
+      "e2e_latency_ms": 169.26219999731984
+    },
+    {
+      "frame_idx": 8,
+      "yolo_class": "person",
+      "yolo_conf": 0.8997207880020142,
+      "bbox": [
+        0.0,
+        75.0,
+        473.0,
+        480.0
+      ],
+      "predicted_class": "trash",
+      "predicted_conf": 0.304648756980896,
+      "entropy": 1.563339381169117,
+      "decision": "uncertain",
+      "is_reliable": false,
+      "udp_sent": false,
+      "probabilities": {
+        "cardboard": 0.01209593378007412,
+        "glass": 0.21805985271930695,
+        "metal": 0.258779913187027,
+        "paper": 0.0860852375626564,
+        "plastic": 0.12033030390739441,
+        "trash": 0.304648756980896
+      },
+      "yolo_latency_ms": 46.44720000214875,
+      "mobilenet_latency_ms": 127.7261999930488,
+      "e2e_latency_ms": 176.86110000067856
+    },
+    {
+      "frame_idx": 9,
+      "yolo_class": "person",
+      "yolo_conf": 0.8991721272468567,
+      "bbox": [
+        0.0,
+        71.0,
+        475.0,
+        480.0
+      ],
+      "predicted_class": "metal",
+      "predicted_conf": 0.41242876648902893,
+      "entropy": 1.5400944472144857,
+      "decision": "uncertain",
+      "is_reliable": false,
+      "udp_sent": false,
+      "probabilities": {
+        "cardboard": 0.02231762371957302,
+        "glass": 0.20176737010478973,
+        "metal": 0.41242876648902893,
+        "paper": 0.12220888584852219,
+        "plastic": 0.11592718958854675,
+        "trash": 0.12535016238689423
+      },
+      "yolo_latency_ms": 42.24360000807792,
+      "mobilenet_latency_ms": 127.32270000560675,
+      "e2e_latency_ms": 171.76070000277832
+    },
+    {
+      "frame_idx": 10,
+      "yolo_class": "person",
+      "yolo_conf": 0.9000723958015442,
+      "bbox": [
+        0.0,
+        67.0,
+        472.0,
+        480.0
+      ],
+      "predicted_class": "metal",
+      "predicted_conf": 0.332720547914505,
+      "entropy": 1.60212764225968,
+      "decision": "uncertain",
+      "is_reliable": false,
+      "udp_sent": false,
+      "probabilities": {
+        "cardboard": 0.0273059643805027,
+        "glass": 0.2150479108095169,
+        "metal": 0.332720547914505,
+        "paper": 0.12966616451740265,
+        "plastic": 0.09065787494182587,
+        "trash": 0.20460154116153717
+      },
+      "yolo_latency_ms": 43.19710000709165,
+      "mobilenet_latency_ms": 126.78590000723489,
+      "e2e_latency_ms": 172.59249999187887
+    }
+  ]
+}

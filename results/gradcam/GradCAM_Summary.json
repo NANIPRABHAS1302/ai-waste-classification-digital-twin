@@ -1,0 +1,50 @@
+[
+    {
+        "true_class": "cardboard",
+        "image": "C:\\Waste classification Research\\dataset\\test\\cardboard\\cardboard101.jpg",
+        "predicted_class": "trash",
+        "confidence": 0.3892,
+        "output": "C:\\Waste classification Research\\results\\gradcam\\cardboard_gradcam.png",
+        "gradcam_layer": "top_conv"
+    },
+    {
+        "true_class": "glass",
+        "image": "C:\\Waste classification Research\\dataset\\test\\glass\\glass107.jpg",
+        "predicted_class": "trash",
+        "confidence": 0.3889,
+        "output": "C:\\Waste classification Research\\results\\gradcam\\glass_gradcam.png",
+        "gradcam_layer": "top_conv"
+    },
+    {
+        "true_class": "metal",
+        "image": "C:\\Waste classification Research\\dataset\\test\\metal\\metal1.jpg",
+        "predicted_class": "trash",
+        "confidence": 0.389,
+        "output": "C:\\Waste classification Research\\results\\gradcam\\metal_gradcam.png",
+        "gradcam_layer": "top_conv"
+    },
+    {
+        "true_class": "paper",
+        "image": "C:\\Waste classification Research\\dataset\\test\\paper\\paper1.jpg",
+        "predicted_class": "trash",
+        "confidence": 0.3886,
+        "output": "C:\\Waste classification Research\\results\\gradcam\\paper_gradcam.png",
+        "gradcam_layer": "top_conv"
+    },
+    {
+        "true_class": "plastic",
+        "image": "C:\\Waste classification Research\\dataset\\test\\plastic\\plastic107.jpg",
+        "predicted_class": "trash",
+        "confidence": 0.3889,
+        "output": "C:\\Waste classification Research\\results\\gradcam\\plastic_gradcam.png",
+        "gradcam_layer": "top_conv"
+    },
+    {
+        "true_class": "trash",
+        "image": "C:\\Waste classification Research\\dataset\\test\\trash\\trash113.jpg",
+        "predicted_class": "trash",
+        "confidence": 0.3888,
+        "output": "C:\\Waste classification Research\\results\\gradcam\\trash_gradcam.png",
+        "gradcam_layer": "top_conv"
+    }
+]

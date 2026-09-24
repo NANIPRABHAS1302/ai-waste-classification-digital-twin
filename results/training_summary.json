@@ -1,0 +1,20 @@
+{
+  "baseline_cnn": {
+    "train_time_sec": 183.5,
+    "model_size_mb": 1.31,
+    "inference_time_ms": 54.09,
+    "epochs_trained": 15
+  },
+  "mobilenetv2": {
+    "train_time_sec": 241.8,
+    "model_size_mb": 9.27,
+    "inference_time_ms": 60.16,
+    "epochs_trained": 15
+  },
+  "efficientnetb0": {
+    "train_time_sec": 226.3,
+    "model_size_mb": 16.35,
+    "inference_time_ms": 67.08,
+    "epochs_trained": 11
+  }
+}

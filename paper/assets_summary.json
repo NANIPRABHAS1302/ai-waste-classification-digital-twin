@@ -1,0 +1,23 @@
+{
+    "figures_created": [
+        "Figure1_Baseline_Training.png",
+        "Figure2_MobileNetV2_Training.png",
+        "Figure3_EfficientNetB0_Training.png",
+        "Figure4_Model_Accuracy.png",
+        "Figure5_Weighted_F1.png",
+        "Figure6_Model_Size.png",
+        "Figure7_Inference_Time.png",
+        "Figure8_Baseline_CM.png",
+        "Figure9_MobileNetV2_CM.png",
+        "Figure10_EfficientNetB0_CM.png"
+    ],
+    "tables_created": [
+        "Table1_Dataset_Statistics.csv",
+        "Table2_Model_Comparison.csv",
+        "Table3_Per_Class_Performance.csv",
+        "Table4_Training_Configuration.csv",
+        "Table5_Model_Complexity.csv"
+    ],
+    "total_figures": 10,
+    "total_tables": 5
+}

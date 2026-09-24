@@ -1,0 +1,10 @@
+{
+    "tables_generated": [
+        "Table1_Dataset_Statistics.csv",
+        "Table2_Model_Comparison.csv",
+        "Table3_Per_Class_Performance.csv",
+        "Table4_Training_Configuration.csv",
+        "Table5_Model_Complexity.csv"
+    ],
+    "total_tables": 5
+}

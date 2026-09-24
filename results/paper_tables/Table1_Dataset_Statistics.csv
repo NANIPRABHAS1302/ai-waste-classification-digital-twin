@@ -1,0 +1,7 @@
+Category,Value
+Training Images,1766
+Validation Images,378
+Testing Images,383
+Number of Classes,6
+Image Size,160 x 160
+Batch Size,32
